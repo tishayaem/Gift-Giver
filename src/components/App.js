@@ -21,6 +21,9 @@ export default class App extends React.Component {
         return (
             <div>
                 <h2>Gift Giver</h2>
+                <div className='gift-list'>
+                    {this.state.gifts.map((gift) => <div key={gift.id}>{gift.id}</div> )}
+                </div>
                 <Button className='btn-add' onClick={this.addGift}>Add Gift</Button>
             </div>
         )
