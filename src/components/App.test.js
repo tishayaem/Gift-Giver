@@ -8,3 +8,6 @@ it('renders correctly', () => {
     expect(app).toMatchSnapshot();
 });
 
+it('initialized the `state` with an empty list', () => {
+    expect(app.state().gifts).toEqual([]);
+} )
